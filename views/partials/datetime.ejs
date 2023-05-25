@@ -1,0 +1,45 @@
+<div class="empname">
+    <div class="name1"><label class="item1">In-Date</label></div><div class="name1"><input  class="item1" type="date" id="indate" name='indate' min="2022-12-01"></div>
+    <div class="name1"><label class="item1">In-Time</label></div><div class="name1"><input  class="item1" type="time" id="intime" name='intime' ></div>
+    <div class="name1"><label class="item1">Out-Date</label></div><div class="name1"><input  class="item1" type="date" id="outdate"  name='outdate' min="2022-12-01"></div>
+    <div class="name1"><label class="item1">Out-Time</label></div><div class="name1"><input  class="item1" type="time" id="outtime"  name='outtime'></div>
+</div>
+
+<% var count = 0                                 %>
+<% for (let j = 1 ; j<7 ; j++){                  %>
+   <div class="empname">                   
+<%      for (let k = 1 ; k<5 ; k++){             %>
+<%      let start=count.toString()               %>
+<%      count=count+1                            %>
+<%      let end=count.toString()                 %>
+<%      if (start.length==1){                    %>
+<%          start = '0'+start                    %>
+<%          }                                    %>
+<%      if (end.length== 1){                     %>
+<%          end = '0' + end                      %>
+<%          }                                    %>
+<%      let string=start+':00'+'-'+end+':00'     %>
+      <div class='name1'>                     
+          <label class="item1"><%= `${string}` %></label>   
+      </div>                                  
+      <div class='name1'>        
+
+          <select class="item1" name="<%= `hr${count-1}`%>" id="<%= `hr${count-1}` %>">
+          <option value="None" selected>None</option>
+          <!-- <option value="Unlisted">Unlisted</option>
+          <option value="Lunch">Lunch</option>
+          <option value="Benched">Benched</option> -->
+<%        projects.forEach(project => {             %>
+          <option value="<%= project.project_ID %>"><%= project.project_ID %></option>   
+          <% })%>
+          <!-- <option value="AM001">AM001</option>
+          <option value="AM002">AM002</option>
+          <option value="AM003">AM003</option>
+          <option value="AM004">AM004</option>
+          <option value="SC0156">SC0156</option> -->
+
+          </select>                           
+     </div>                                  
+<%     }                                         %>
+   </div>                                     
+<% }                                             %>

@@ -1,0 +1,126 @@
+<script>
+    function proceed(){
+    document.getElementById("empname").disabled = true;
+    document.getElementById("indate").disabled = true;
+    document.getElementById("intime").disabled = true;
+    document.getElementById("outdate").disabled = true;
+    document.getElementById("outtime").disabled = true;
+    document.getElementById("OMG").disabled = true;
+        let inhr=parseInt(intime.value.slice(0,2))
+        let inmin=parseInt(intime.value.slice(3))
+        let outhr=parseInt(outtime.value.slice(0,2))
+        let outmin=parseInt(outtime.value.slice(3))
+        
+        var night = 0
+        if (outhr<inhr){
+            var night=1
+        }
+        
+        let total = 0
+        let duration = 0
+        let hrs=0
+        if (night==1){
+            hrs = 24+(outhr-inhr)
+        } else {
+            hrs = outhr-inhr
+        }
+        if (inmin>outmin){
+            hrs=hrs-1
+            duration = hrs*60 + 60-(inmin-outmin)
+        } else {
+            duration = hrs*60 + outmin-inmin
+        }
+        if (duration > 539){
+            let OT = 1
+        } else {
+            let OT = 0
+        }
+        console.log(hrs)
+        console.log(duration)
+        x=document.getElementById('body')
+        y=document.createElement('div')
+        y.setAttribute('class','empname2')
+        x.appendChild(y)
+        subform = document.createElement('form')
+        subform.setAttribute('action','/subform')
+        subform.setAttribute('method','post')
+        y.appendChild(subform)
+        if (night==1){
+            for (let i = inhr ; i<24 ; i ++){
+                divi=document.createElement('div')
+                divi.setAttribute('class','name1')
+                subform.appendChild(divi)
+                lab=document.createElement('label')
+                lab.innerHTML = `${i}:00-${i+1}:00`
+                lab.setAttribute('class','labels')
+                divi.appendChild(lab)
+                div2=document.createElement('div')
+                div2.setAttribute('class','name1')
+                subform.appendChild(div2)
+                inp=document.createElement('input')
+                let str=`inpbox${i}`
+                inp.setAttribute('class','inpbox')
+                inp.setAttribute('type','number')
+                inp.setAttribute('id',str)
+                inp.setAttribute('name',str)
+                div2.appendChild(inp)
+            }
+            end = 0
+            if (outhr > 0){
+                end=1
+                outhr=outhr+1
+            }
+            outhr
+            for (let j = 0 ;j<outhr;j++){
+                divi=document.createElement('div')
+                divi.setAttribute('class','name1')
+                subform.appendChild(divi)
+                lab=document.createElement('label')
+                lab.innerHTML = `${j}:00-${j+1}:00`
+                lab.setAttribute('class','labels')
+                divi.appendChild(lab)
+                div2=document.createElement('div')
+                div2.setAttribute('class','name1')
+                subform.appendChild(div2)
+                inp=document.createElement('input')
+                let str=`inpbox${j}`
+                inp.setAttribute('class','inpbox')
+                inp.setAttribute('type','number')
+                inp.setAttribute('id',str)
+                inp.setAttribute('name',str)
+                div2.appendChild(inp)
+
+            }
+        
+        } else {
+            if (outhr > 0){
+                end=1
+                outhr=outhr+1
+            for (let j = inhr ;j<outhr;j++){
+                divi=document.createElement('div')
+                divi.setAttribute('class','name1')
+                subform.appendChild(divi)
+                lab=document.createElement('label')
+                lab.innerHTML = `${j}:00-${j+1}:00`
+                lab.setAttribute('class','labels')
+                divi.appendChild(lab)
+                div2=document.createElement('div')
+                div2.setAttribute('class','name1')
+                subform.appendChild(div2)
+                inp=document.createElement('input')
+                let str=`inpbox${j}`
+                inp.setAttribute('class','inpbox')
+                inp.setAttribute('type','number')
+                inp.setAttribute('id',str)
+                inp.setAttribute('name',str)
+                div2.appendChild(inp)
+            }}
+        }
+        final=document.createElement('button')
+        final.setAttribute('type','submit')
+        final.setAttribute('class','button')
+        final.setAttribute('id','final')
+        final.setAttribute('value','submit')
+        final.innerHTML='Peace'
+        subform.appendChild(final)                }
+</script>

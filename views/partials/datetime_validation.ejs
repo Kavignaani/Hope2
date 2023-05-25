@@ -1,0 +1,37 @@
+<script>
+    function validate_form() {
+        console.log("Peaceeee")
+        let emp_name = document.forms['worktime_sheet']['emp_name'].value;
+        let indate = document.forms['worktime_sheet']['indate'].value;
+        let intime = document.forms['worktime_sheet']['intime'].value;
+        let outdate = document.forms['worktime_sheet']['outdate'].value;
+        let outtime = document.forms['worktime_sheet']['outtime'].value;
+    
+        if (emp_name == 'None' || indate == '' || outdate == '' || intime == '' || outtime == '' ){
+            alert('Basic info not given properly. Please enter all info')
+            return false
+        }
+
+        var date1 = new Date(indate);
+        var date2 = new Date(outdate);
+        
+        var difference_in_time = date2.getTime() - date1.getTime();
+        var difference_in_days = difference_in_time / (1000 * 3600 * 24);
+
+        if (difference_in_days <0) {
+            alert('Out-date earlier than in-date. Please change')
+            return false
+        }
+        if (difference_in_days == 0 && intime > outtime) {
+            alert('Outtime earlier than intime. Please change')
+            return false
+        }
+        if (difference_in_days > 1){
+            alert('Date Gap very much. Please change')
+            return false
+        }
+        return true
+        
+            
+    }
+</script>
