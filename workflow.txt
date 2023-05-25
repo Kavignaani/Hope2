@@ -1,0 +1,49 @@
+Milan Convo: 
+LayUp
+Post processing cutting and trming
+PP sanding
+Painting prep
+Painting
+
+Inventory Services
+Date category material name desc , vendor name (suppkier) quantity, invoice number , purchase number zoho produces , amount ,
+
+
+
+Inventory Machined 
+Category
+Standard parts , mechanicals , electronics , complimentary too,  fastneres ,tools , accessories 
+
+Description,  name , invoice number , vendor name , PO number ,rate , quantity
+
+
+
+
+
+
+
+
+
+to learn
+1.json   --- done
+2.await , async
+3.react
+4. ERP
+
+
+
+
+current tables :
+employeelist
+newproj - projectslist
+timesheets
+
+1. take all ctc , make another dictionary with cost for each project by that employee on that worktime input
+2. so , rpoject id - hours spent by that person on that project that day , and cost for that project that day
+3. add this in the projects list - hours worked on it and cost for it
+4. 2 features reqd , monthly overview , and overall all project overview
+5. edit data of employees , delete employees feature reqd
+6. lets present as a calendar - if they click day , they will get worktime overview 
+7. download as csv feature. 
+8. all variables fixing their names
+
