@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Comic+Neue&display=swap');
+*{
+    /* font-family: "Comic Sans MS","cursive"; */
+    font-family: "Comfortaa";
+    font-family: "Comic Neue";
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.logo {
+    margin-left: 20px;
+     width: 250px;
+     height: 79.25px;   
+     cursor: pointer;
+}
+/* .logo:hover{
+    /* background-color: #22A7F0 }*/
+.hyper{
+    border: 2px solid grey;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 10%;
+    justify-content: center;
+}
+.super{
+    position: absolute;
+    width: 100%;
+    top: 400px;
+    display: flex;
+    justify-content: center;
+}
+.link {
+    text-decoration: none;
+    color: black;
+    box-shadow: 5px 5px 5px rgba(0.1,0.1,0.1,0.1);
+}
+.link:hover{
+    top: -5px;
+    box-shadow: 5px 5px 5px rgba(0.3,0.3,0.3,0.3);
+    background-color: grey;
+    color: white;
+}
+.left_up {
+    position: absolute;
+    right : 35px;
+    top : 20px;
+    cursor: pointer;
+    border : 2px solid grey;
+    padding: 10px;
+    height: 15px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left_up2 {
+    position: absolute;
+    right : 165px;
+    top : 20px;
+    cursor: pointer;
+    border : 2px solid grey;
+    padding: 10px;
+    height: 15px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left_up3 {
+    position: absolute;
+    right : 35px;
+    top : 80px;
+    cursor: pointer;
+    border : 2px solid grey;
+    padding: 10px;
+    height: 15px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar_div{
+    display: flex;
+}
+.navbar_row_div{
+    width: 100%;
+    
+}
+.navbar_button {
+    cursor: pointer;
+    height: 30px;
+    width: 100%;
+}
+.body_full_div{
+    display: flex;
+}
+.body_left_div{
+    border: 2px grey solid;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.form_rows_div{
+    margin: 10px;
+    margin-top: 20px;
+    display: flex;
+}
+.new_form_items{
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 50%;
+}
+.form_submit_button{
+    width: 100%;
+    margin-top: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+.input_box{
+    border: 1px black dotted
+}
+.body_right_div{
+    border: 2px grey solid;
+     flex: 3;
+     height: 86vh;
+     overflow: scroll;
+}
+.download_csv_div{
+    margin: 7px;
+    margin-bottom: 0px;
+
+}
+.csv_button{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+.action_buttons_div{
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.action_button{
+    width: auto;
+    height: 20px;
+    padding: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+th , td{
+    border: 1px dotted black;
+    padding-top : 5px;
+    padding-bottom : 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+.tr_rows_div{
+    flex: 1;
+}
+.table_div{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    }
+.navbar_full{
+    display: flex;
+}
+.navlist {
+    flex: 1;
+}
+.navlist2 {
+    width: 100%;
+}
+.navbut {
+    cursor: pointer;
+    height: 30px;
+    width: 100%;
+    background-color: #EFEFEF;
+}
+.body_part{
+    display: flex;
+}
+.body_left{
+    border: 2px grey solid;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.body_right{
+    border: 2px grey solid;
+     flex: 4;
+     height: 85vh;
+     overflow: scroll;
+}
+.rows{
+margin: 10px;
+margin-top: 20px;
+display: flex;
+}
+.labs{
+    flex-basis: 49%;}
+.datetimeinp{
+    border: 1px black dotted;
+}
+.inps{
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    flex-basis: 40%;
+    border: 1px black dotted;
+}
+.button{
+    width: 100%;
+    margin-top: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+/* forms */
+#new_outsource_form{
+    display: none;
+}
+#new_prod_req_form{
+    display: none;
+}
+.left_up:hover{
+    top: 0px
+}
+.left_up2:hover{
+    top: 0px
+}
+
+

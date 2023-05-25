@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Comic+Neue&display=swap');
+
+*{
+    /* font-family: "Comic Sans MS","cursive"; */
+    font-family: "Comfortaa";
+    font-family: "Comic Neue";
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#body{
+
+    /* background: url('blue_fabheads.png'); */
+    background-repeat: no-repeat;
+}
+
+.logo {
+    margin-left: 20px;
+        /* margin-top: 10px; */
+     width: 250px;
+     height: 79.25px;   
+     cursor: pointer;
+    }
+/* .logo:hover{
+    box-shadow:2px 2px 2px #22A7F0
+} */
+.link {
+    text-decoration: none;
+    color: black;
+    box-shadow: 5px 5px 5px rgba(0.1,0.1,0.1,0.1);
+}
+.left_up {
+    position: absolute;
+    right : 35px;
+    top : 20px;
+    cursor: pointer;
+    border : 2px solid grey;
+    padding: 10px;
+    height: 15px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left_up2 {
+    position: absolute;
+    right : 165px;
+    top : 20px;
+    cursor: pointer;
+    border : 2px solid grey;
+    padding: 10px;
+    height: 15px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left_up3 {
+    position: absolute;
+    right : 35px;
+    top : 80px;
+    cursor: pointer;
+    border : 2px solid grey;
+    padding: 10px;
+    height: 15px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hyper{
+    border: 2px solid grey;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 10%;
+    justify-content: center;
+}
+.super{
+    position: absolute;
+    width: 100%;
+    top: 400px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    }
+
+.empname{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.empname2{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    flex-wrap: wrap;
+}
+.name1{
+    flex-basis: 12%;
+    padding-top: 5px;
+    padding-left: 5px;
+    /* border: red 2px solid; */
+}
+.item1{
+    width: 90%;
+    padding-top: 5px;
+    padding-left: 5px;
+    /* border: black 2px solid; */
+    
+}
+.button{
+    width: 100%;
+    margin-top: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+.nodisp{
+    display: none;
+}
+.empname3{
+    display: flex;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navlist {
+    flex: 1;
+}
+.navlist2 {
+    width: 100%;
+}
+.navbut {
+    cursor: pointer;
+    height: 30px;
+    width: 100%;
+    background-color: #EFEFEF;
+}
+.body_part{
+    display: flex;
+}
+.body_left{
+    border: 2px grey solid;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.body_right{
+    border: 2px grey solid;
+     flex: 3;
+     height: 85vh;
+     overflow: scroll;
+}
+.rows{
+margin: 10px;
+margin-top: 20px;
+display: flex;
+}
+.labs{
+    flex-basis: 49%;}
+.datetimeinp{
+    border: 1px black dotted;
+}
+.inps{
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    flex-basis: 40%;
+    border: 1px black dotted;
+}
+.date{
+    flex-basis: 40%;
+
+}
+#overview{
+    display: none;
+}#employee-worktime{
+    display: none;
+}
+#emplist{
+    display: none;
+}
+#emp_list{
+    display: none;
+}
+#OT_data{
+    display: none;
+}
+.table_div{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    }
+th,td{
+    border: 1px dotted black;
+    padding-top : 5px;
+    padding-bottom : 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 1;
+}
+th {
+    position: sticky;
+}
+.link:hover{
+    top: -5px;
+    box-shadow: 5px 5px 5px rgba(0.3,0.3,0.3,0.3);
+    background-color: grey;
+    color: white;
+}
+
+.left_up:hover{
+    top: 0px
+}
+.left_up2:hover{
+    top: 0px
+}
